@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Epass</title>
+        <style>
+            body{
+                background-color:pink;
+            }
+            div{
+                border: 1px solid black;
+                padding:10px 5px 10px 5px;
+                margin:100px 200px;
+                width:400px;
+                height:500px;
+                border-radius: 5%;
+                background-color:white;
+            }
+            form{
+                align-items: center;
+                justify-content: center;
+                height:auto;
+            }
+            input{
+                width:fit-content;
+            }
+            .col-25{
+                width:25%;
+                float: left;
+                margin-top: 6px;
+            }
+            .col-75 {
+               float: left;
+               width: 75%;
+               margin-top: 6px;}
+        </style>
+    </head>
+    <body>
+            <h2 style="color: red;margin:0 200px">Welcome TO Epass Centre</h2>
+        <div>
+            <form action="login_page" method="POST">
+                <label htmlFor="fname">FirstName:</label>
+                <input  name="fname" type="text"/>
+                <br/>
+                <label htmlFor="lname">LastName:</label>
+                <input  name="lname" type="text"/>
+                <br/>
+                <label htmlFor="email">Email:</label>
+                <input  name="email" type="text"/>
+                <br/>
+                <label htmlFor="source_state">SOURCE STATE:</label>
+                <input  name="source_state" type="text"/>
+                <br/>
+                <label htmlFor="source">SOURCE:</label>
+                <input  name="source" type="text"/>
+                <br/>
+                <label htmlFor="dest-state">DESTINATION STATE:</label>
+                <input  name="dest-state" type="text"/>
+                <br/>
+                <label htmlFor="destination">DESTINATION:</label>
+                <input  name="destination" type="text"/>
+                <br/>
+                <label htmlFor="phoneNumber">PHONE NUMBER:</label>
+                <input  name="phoneNumber" type="text"/>
+                <br/>
+                <label htmlFor="idcard">ID CARD:</label>
+                <input  name="idcard" type="text"/>
+                <br/>
+                <label htmlFor="trip">DATE:</label>
+                <input  name="trip" type="text" onclick="Focus(this.name)"/>
+                <br/>
+                <input type="submit" value="SUBMIT" style="background-color:blue;color:beige;border:rgba(0,0,0,0.8);padding:2px 4px;margin:100px"/>
+            </form>
+        </div>
+    </body>
+</html>
